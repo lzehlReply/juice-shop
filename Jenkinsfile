@@ -7,7 +7,7 @@ pipeline {
                           podman build -t first_try -f ./Dockerfile
 
 
-                          podman run --rm -d -p 3000:3000 '''
+                          podman run --rm -d -p 3000:3000 first_try '''
       }
     }
 
